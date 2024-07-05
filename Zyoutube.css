@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", "Arial";
+  height: 120svh;
+  padding-left: 96px;
+  padding-top: 75px;
+  padding-right: 24px;
+}
+/*New style Object position, Object ***  */
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.thumbnail-row {
+  position: relative;
+}
+
+.smalllogo {
+  border-radius: 100%;
+  width: 40px;
+}
+
+.video-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.video-total-info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  margin-top: 10px;
+}
+.views {
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.video-time {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  bottom: 8px;
+  right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+}
+@media (max-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
